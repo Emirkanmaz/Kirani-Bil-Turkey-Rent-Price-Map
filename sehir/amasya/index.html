@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Amasya</title>
+		<link rel="icon" type="image/x-icon" href="/images\logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+    
+	</head>
+	<body class="is-preload left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="/index.html">Kiranı Bil</a></h1>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-3 col-12-medium">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+										<section>
+                      <div >
+											<h3 style="border: dotted red;">
+                          İlçelere ait detaylı analiz mevcut değil.
+                      </h3>
+                    </div>
+										</section>
+
+										<section>
+											<h3>Kira % Yüzdelik Değişimi</h3>
+											<h3 style="color:#04AA6D;">Geçen Aya Göre 9.13% Arttı.</h3>
+											<h3 style="color:#04AA6D;">Son 3 Ayda 38.98% Artış Gösterdi.</h3>
+											<h3 style="color:#04AA6D;">Gelecek Ay 11.33% Artarak 4,906 olması tahmin ediliyor.</h3>
+                                           
+										</section>
+
+								</div>
+							</div>
+              <div class="col-1 col-12-medium"></div>
+							<div class="col-8 col-12-medium imp-medium">
+								<div id="content">
+
+									<!-- Content -->
+										<article>
+
+											<h2>Amasya Bölgesi Kira Ortalaması<i style="color:#04AA6D;"> 4,353 ₺</i></h2>
+                                            
+                                            <div id="kira" style="height: 400px; width: 900px; margin: 75px 0 50px 0;">
+                                            </div>
+                                            <div id="m2" style="height: 400px; width: 900px; margin-bottom: 50px;">
+                                            </div>
+											<p>Kırmızı veriler gerçeği yansıtmaz. Önceki veriler incelenerek bilgisayar tarafından hesaplanmış tahmin verileridir.</p>
+
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Kiranı Bil. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+            <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script></head>
+            <script type="text/javascript">
+                window.onload = function () {
+                    var chart = new CanvasJS.Chart("kira",
+                  {
+              
+                    title:{
+                    text: "Kira Ortalaması"
+                    },
+                     data: [
+                    {
+                      type: "line",
+              
+                      dataPoints: [
+                      { label: "Haziran 2022", y: 2037 },
+{ label: "Temmuz 2022", y: 2522 },
+{ label: "Ağustos 2022", y: 2673 },
+{ label: "Eylül 2022", y: 2869 },
+{ label: "Ekim 2022", y: 2868 },
+{ label: "Kasım 2022", y: 2869 },
+{ label: "Aralık 2022", y: 3154 },
+{ label: "Ocak 2023", y: 3150 },
+{ label: "Şubat 2023", y: 3538 },
+{ label: "Mart 2023", y: 3671 },
+{ label: "Nisan 2023", y: 4353 },
+{ label: "Mayıs 2023", y: 4906, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Haziran 2023", y: 5773, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Temmuz 2023", y: 6812, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Ağustos 2023", y: 8019, color: "#FF0000", lineColor: "#FF0000" }
+                    ]
+                    }
+                    ]
+                  });
+                  chart.render();
+                  var chart = new CanvasJS.Chart("m2",
+                  {
+              
+                    title:{
+                    text: "M² Ortalaması"
+                    },
+                     data: [
+                    {
+                      type: "line",
+              
+                      dataPoints: [
+                      { label: "Haziran 2022", y: 20},
+                      { label: "Temmuz 2022",  y: 26},
+                      { label: "Ağustos 2022", y: 25},
+                      { label: "Eylül 2022",   y: 26},
+                      { label: "Ekim 2022",    y: 26},
+                      { label: "Kasım 2022",   y: 26},
+                      { label: "Aralık 2022",  y: 29},
+                      { label: "Ocak 2023",    y: 29},
+                      { label: "Şubat 2023",   y: 35},
+                      { label: "Mart 2023",    y: 36},
+                      { label: "Nisan 2023",   y: 45},
+                      { label: "Mayıs 2023", y: 54, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Haziran 2023", y: 66, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Temmuz 2023", y: 81, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Ağustos 2023", y: 100, color: "#FF0000", lineColor: "#FF0000" }
+                    ]
+                    }
+                    ]
+                  });
+                  chart.render();                  
+                }
+            </script>
+	</body>
+</html>

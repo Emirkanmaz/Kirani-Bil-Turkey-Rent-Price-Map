@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Kütahya</title>
+		<link rel="icon" type="image/x-icon" href="/images\logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+    
+	</head>
+	<body class="is-preload left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="/index.html">Kiranı Bil</a></h1>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-medium">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+										<section>
+											<h3>Kütahya İlçeleri</h3>
+											<div class="vertical-menu">
+                                                <a href="./index.html" class="active">Kütahya</a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Altıntaş <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Aslanapa <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Çavdarhisar <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Domanic <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Dumlupınar <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Emet <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Gediz <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Hisarcık <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Merkez <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Pazarlar <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Simav <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Şaphane <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                                <a style="background-color: #ff000046;" href="./index.html">Tavşanlı <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                              </div>
+										</section>
+
+										<section>
+											<h3>Kira % Yüzdelik Değişimi</h3>
+                                            
+											<h3 style="color:#04AA6D;">Geçen Aya Göre 2.60% Arttı.</h3>
+											<h3 style="color:#04AA6D;">Son 3 Ayda 8.61% Artış Gösterdi.</h3>
+											<h3 style="color:#04AA6D;">Gelecek Ay 3.77% Artarak 3,800 olması tahmin ediliyor.</h3>
+                                           
+										</section>
+
+								</div>
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+								<div id="content">
+
+									<!-- Content -->
+										<article>
+
+											<h2>Kütahya Bölgesi Kira Ortalaması<i style="color:#04AA6D;"> 3,662 ₺</i></h2>
+                                            
+                                            <div id="kira" style="height: 400px; width: 900px; margin: 75px 0 50px 0;">
+                                            </div>
+                                            <div id="m2" style="height: 400px; width: 900px; margin-bottom: 50px;">
+                                            </div>
+											<p>Kırmızı veriler gerçeği yansıtmaz. Önceki veriler incelenerek bilgisayar tarafından hesaplanmış tahmin verileridir.</p>
+
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Kiranı Bil. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+            <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script></head>
+            <script type="text/javascript">
+                window.onload = function () {
+                    var chart = new CanvasJS.Chart("kira",
+                  {
+              
+                    title:{
+                    text: "Kira Ortalaması"
+                    },
+                     data: [
+                    {
+                      type: "spline",
+              
+                      dataPoints: [
+                      { label: "Haziran 2022", y: 1797 },
+{ label: "Temmuz 2022", y: 1978 },
+{ label: "Ağustos 2022", y: 2401 },
+{ label: "Eylül 2022", y: 2793 },
+{ label: "Ekim 2022", y: 2792 },
+{ label: "Kasım 2022", y: 3143 },
+{ label: "Aralık 2022", y: 3180 },
+{ label: "Ocak 2023", y: 3255 },
+{ label: "Şubat 2023", y: 3498 },
+{ label: "Mart 2023", y: 3569 },
+{ label: "Nisan 2023", y: 3662 },
+{ label: "Mayıs 2023", y: 3800, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Haziran 2023", y: 4000, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Temmuz 2023", y: 4200, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Ağustos 2023", y: 4400, color: "#FF0000", lineColor: "#FF0000" }
+                    ]
+                    }
+                    ]
+                  });
+                  chart.render();
+                  var chart = new CanvasJS.Chart("m2",
+                  {
+              
+                    title:{
+                    text: "M² Ortalaması"
+                    },
+                     data: [
+                    {
+                      type: "spline",
+              
+                      dataPoints: [
+                       {label: "Haziran 2022", y: 20 },
+{ label: "Temmuz 2022", y: 24 },
+{ label: "Ağustos 2022", y: 26 },
+{ label: "Eylül 2022", y: 30 },
+{ label: "Ekim 2022", y: 24 },
+{ label: "Kasım 2022", y: 28 },
+{ label: "Aralık 2022", y: 30 },
+{ label: "Ocak 2023", y: 36 },
+{ label: "Şubat 2023", y: 43 },
+{ label: "Mart 2023", y: 43 },
+{ label: "Nisan 2023", y: 48 },
+{ label: "Mayıs 2023", y: 50, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Haziran 2023", y: 55, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Temmuz 2023", y: 60, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Ağustos 2023", y: 65, color: "#FF0000", lineColor: "#FF0000" }
+                    ]
+                    }
+                    ]
+                  });
+                  chart.render();                  
+                }
+            </script>
+	</body>
+</html>

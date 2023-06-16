@@ -1,0 +1,1046 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Kiranı Bil</title>
+    <link rel="icon" type="image/x-icon" href="/images\logo.png">
+		<link rel="icon" type="image/x-icon" href="/images\logo.png">
+		<link rel="icon" type="image/x-icon" href="/images\logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="./assets/js/mapdata.js"></script>
+		<script src="./assets/js/countrymap.js"></script>
+    
+		<style>
+
+		</style>
+	</head>
+	<body class="is-preload homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html">Kiranı Bil</a></h1>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Banner -->
+				<div id="banner-wrapper">
+					<div id="banner" class="box container">
+						<div class="row">
+							<div class="col-7 col-12-medium">
+								<h2>Kiranı Bil.</h2>
+								<p>Tüm Şehirlerde <strong>m²</strong> ve <strong>ortalama kira</strong> hakkında bilgi sahibi olun. Geçmiş verilere göz atın, gelecek  tahminlerimizden yararlanın.</p>
+							</div>
+							<div class="col-5 col-12-medium">
+								<ul>
+									<li><a href="#main-wrapper" class="button large icon solid fa-arrow-circle-down">Haritaya Gidin</a></li>										
+                  <div class="dropdown">
+                          <button onclick="myFunction()" class="dropbtn icon fa-question-circle">Şehir Seçin</button>
+                          <div id="myDropdown" class="dropdown-content">
+                            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                            <a href="./sehir/adana">Adana</a>
+                            <a href="./sehir/adiyaman">Adıyaman</a>
+                            <a href="./sehir/afyonkarahisar">Afyonkarahisar</a>
+                            <a href="./sehir/agri">Ağrı</a>
+                            <a href="./sehir/aksaray">Aksaray</a>
+                            <a href="./sehir/amasya">Amasya</a>
+                            <a href="./sehir/ankara">Ankara</a>
+                            <a href="./sehir/antalya">Antalya</a>
+                            <a href="./sehir/ardahan">Ardahan</a>
+                            <a href="./sehir/artvin">Artvin</a>
+                            <a href="./sehir/aydin">Aydın</a>
+                            <a href="./sehir/balikesir">Balıkesir</a>
+                            <a href="./sehir/bartin">Bartın</a>
+                            <a href="./sehir/batman">Batman</a>
+                            <a href="./sehir/bayburt">Bayburt</a>
+                            <a href="./sehir/bilecik">Bilecik</a>
+                            <a href="./sehir/bingol"> Bingöl</a>
+                            <a href="./sehir/bitlis">Bitlis</a>
+                            <a href="./sehir/bolu">Bolu</a>
+                            <a href="./sehir/burdur">Burdur</a>
+                            <a href="./sehir/bursa">Bursa</a>
+                            <a href="./sehir/canakkale">Çanakkale</a>
+                            <a href="./sehir/cankiri">Çankırı</a>
+                            <a href="./sehir/corum">Çorum</a>
+                            <a href="./sehir/denizli">Denizli</a>
+                            <a href="./sehir/diyarbakir">Diyarbakır</a>
+                            <a href="./sehir/duzce">Düzce</a>
+                            <a href="./sehir/edirne">Edirne</a>
+                            <a href="./sehir/elazig">Elazığ</a>
+                            <a href="./sehir/erzincan">Erzincan</a>
+                            <a href="./sehir/erzurum">Erzurum</a>
+                            <a href="./sehir/eskisehir">Eskişehir</a>
+                            <a href="./sehir/gaziantep">Gaziantep</a>
+                            <a href="./sehir/giresun">Giresun</a>
+                            <a href="./sehir/gumushane">Gümüşhane</a>
+                            <a href="./sehir/hakkari">Hakkari</a>
+                            <a href="./sehir/hatay">Hatay</a>
+                            <a href="./sehir/igdir">Iğdır</a>
+                            <a href="./sehir/isparta">Isparta</a>
+                            <a href="./sehir/istanbul">Istanbul</a>
+                            <a href="./sehir/izmir">İzmir</a>
+                            <a href="./sehir/kahramanmaras">Kahramanmaraş</a>
+                            <a href="./sehir/karabuk">Karabük</a>
+                            <a href="./sehir/karaman">Karaman</a>
+                            <a href="./sehir/kars">Kars</a>
+                            <a href="./sehir/kastamonu">Kastamonu</a>
+                            <a href="./sehir/kayseri">Kayseri</a>
+                            <a href="./sehir/kilis">Kilis</a>
+                            <a href="./sehir/kirikkale">Kırıkkale</a>
+                            <a href="./sehir/kirklareli">Kırklareli</a>
+                            <a href="./sehir/kirsehir">Kırşehir</a>
+                            <a href="./sehir/kocaeli">Kocaeli</a>
+                            <a href="./sehir/konya">Konya</a>
+                            <a href="./sehir/kutahya">Kütahya</a>
+                            <a href="./sehir/malatya">Malatya</a>
+                            <a href="./sehir/manisa">Manisa</a>
+                            <a href="./sehir/mardin">Mardin</a>
+                            <a href="./sehir/mersin">Mersin</a>
+                            <a href="./sehir/mugla">Muğla</a>
+                            <a href="./sehir/mus">Muş</a>
+                            <a href="./sehir/nevsehir">Nevşehir</a>
+                            <a href="./sehir/nigde">Niğde</a>
+                            <a href="./sehir/ordu">Ordu</a>
+                            <a href="./sehir/osmaniye">Osmaniye</a>
+                            <a href="./sehir/rize">Rize</a>
+                            <a href="./sehir/sakarya">Sakarya</a>
+                            <a href="./sehir/samsun">Samsun</a>
+                            <a href="./sehir/sanliurfa">Şanlıurfa</a>
+                            <a href="./sehir/siirt">Siirt</a>
+                            <a href="./sehir/sinop">Sinop</a>
+                            <a href="./sehir/sivas">Sivas</a>
+                            <a href="./sehir/sirnak">Şırnak</a>
+                            <a href="./sehir/tekirdag">Tekirdağ</a>
+                            <a href="./sehir/tokat">Tokat</a>
+                            <a href="./sehir/trabzon">Trabzon</a>
+                            <a href="./sehir/tunceli">Tunceli</a>
+                            <a href="./sehir/usak">Uşak</a>
+                            <a href="./sehir/van">Van</a>
+                            <a href="./sehir/yalova">Yalova</a>
+                            <a href="./sehir/yozgat">Yozgat</a>
+                            <a href="./sehir/zonguldak">Zonguldak</a>
+                          </div>
+                        </div>
+										</div>									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Features -->
+				<div id="features-wrapper">
+					<div class="container">
+						<div class="row">
+              <!-- m2 -->
+              <div class="col-6 col-12-medium">
+                <section class="box feature">
+                    <div class="inner">
+                        <header>
+                            <h2>Ortalama M² Kira Fiyatları Sıralaması</h2>
+                            <p>Detay İçin Şehire Tıklayın</p>
+                        </header>
+                        <div style="max-height: 500px; overflow-y: auto;">
+                        <table class="styled-table">
+                          <thead>
+                              <tr>
+                                  <th>Sıralama</th>
+                                  <th>Şehir</th>
+                                  <th>m² Fiyatı (₺)</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="active-row">
+                              <td>1</td>
+                              <td><a href="./sehir/mugla">Muğla</a></td>
+                              <td>219 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>2</td>
+                              <td><a href="./sehir/antalya">Antalya</a></td>
+                              <td>132 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>3</td>
+                              <td><a href="./sehir/istanbul">İstanbul</a></td>
+                              <td>130 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>4</td>
+                              <td><a href="./sehir/izmir">İzmir</a></td>
+                              <td>101 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>5</td>
+                              <td><a href="./sehir/mersin">Mersin</a></td>
+                              <td>99 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>6</td>
+                              <td><a href="./sehir/ankara">Ankara</a></td>
+                              <td>88 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>7</td>
+                              <td><a href="./sehir/aydin">Aydın</a></td>
+                              <td>78 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>8</td>
+                              <td><a href="./sehir/balikesir">Balıkesir</a></td>
+                              <td>73 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>9</td>
+                              <td><a href="./sehir/canakkale">Çanakkale</a></td>
+                              <td>73 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>10</td>
+                              <td><a href="./sehir/edirne">Edirne</a></td>
+                              <td>73 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>11</td>
+                              <td><a href="./sehir/yalova">Yalova</a></td>
+                              <td>72 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>12</td>
+                              <td><a href="./sehir/bursa">Bursa</a></td>
+                              <td>72 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>13</td>
+                              <td><a href="./sehir/kocaeli">Kocaeli</a></td>
+                              <td>68 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>14</td>
+                              <td><a href="./sehir/sakarya">Sakarya</a></td>
+                              <td>66 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>15</td>
+                              <td><a href="./sehir/nevsehir">Nevşehir</a></td>
+                              <td>64 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>16</td>
+                              <td><a href="./sehir/eskisehir">Eskişehir</a></td>
+                              <td>64 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>17</td>
+                              <td><a href="./sehir/hatay">Hatay</a></td>
+                              <td>63 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>18</td>
+                              <td><a href="./sehir/tekirdag">Tekirdağ</a></td>
+                              <td>63 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>19</td>
+                              <td><a href="./sehir/manisa">Manisa</a></td>
+                              <td>61 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>20</td>
+                              <td><a href="./sehir/denizli">Denizli</a></td>
+                              <td>61 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>21</td>
+                              <td><a href="./sehir/adana">Adana</a></td>
+                              <td>60 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>22</td>
+                              <td><a href="./sehir/samsun">Samsun</a></td>
+                              <td>60 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>23</td>
+                              <td><a href="./sehir/bartin">Bartın</a></td>
+                              <td>59 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>24</td>
+                              <td><a href="./sehir/gaziantep">Gaziantep</a></td>
+                              <td>58 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>25</td>
+                              <td><a href="./sehir/kirklareli">Kırklareli</a></td>
+                              <td>55 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>26</td>
+                              <td><a href="./sehir/aksaray">Aksaray</a></td>
+                              <td>55 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>27</td>
+                              <td><a href="./sehir/konya">Konya</a></td>
+                              <td>53 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>28</td>
+                              <td><a href="./sehir/trabzon">Trabzon</a></td>
+                              <td>53 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>29</td>
+                              <td><a href="./sehir/zonguldak">Zonguldak</a></td>
+                              <td>52 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>30</td>
+                              <td><a href="./sehir/adiyaman">Adıyaman</a></td>
+                              <td>51 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>31</td>
+                              <td><a href="./sehir/isparta">Isparta</a></td>
+                              <td>51 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>32</td>
+                              <td><a href="./sehir/karaman">Karaman</a></td>
+                              <td>51 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>33</td>
+                              <td><a href="./sehir/sinop">Sinop</a></td>
+                              <td>49 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>34</td>
+                              <td><a href="./sehir/bolu">Bolu</a></td>
+                              <td>49 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>35</td>
+                              <td><a href="./sehir/bilecik">Bilecik</a></td>
+                              <td>49 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>36</td>
+                              <td><a href="./sehir/burdur">Burdur</a></td>
+                              <td>49 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>37</td>
+                              <td><a href="./sehir/karabuk">Karabük</a></td>
+                              <td>48 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>38</td>
+                              <td><a href="./sehir/kutahya">Kütahya</a></td>
+                              <td>48 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>39</td>
+                              <td><a href="./sehir/diyarbakir">Diyarbakır</a></td>
+                              <td>45 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>40</td>
+                              <td><a href="./sehir/ordu">Ordu</a></td>
+                              <td>45 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>41</td>
+                              <td><a href="./sehir/tokat">Tokat</a></td>
+                              <td>45 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>42</td>
+                              <td><a href="./sehir/amasya">Amasya</a></td>
+                              <td>45 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>43</td>
+                              <td><a href="./sehir/duzce">Düzce</a></td>
+                              <td>45 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>44</td>
+                              <td><a href="./sehir/malatya">Malatya</a></td>
+                              <td>44 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>45</td>
+                              <td><a href="./sehir/kahramanmaras">Kahramanmaraş</a></td>
+                              <td>44 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>46</td>
+                              <td><a href="./sehir/van">Van</a></td>
+                              <td>44 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>47</td>
+                              <td><a href="./sehir/usak">Uşak</a></td>
+                              <td>44 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>48</td>
+                              <td><a href="./sehir/yozgat">Yozgat</a></td>
+                              <td>43 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>49</td>
+                              <td><a href="./sehir/afyonkarahisar">Afyonkarahisar</a></td>
+                              <td>43 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>50</td>
+                              <td><a href="./sehir/rize">Rize</a></td>
+                              <td>42 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>51</td>
+                              <td><a href="./sehir/sivas">Sivas</a></td>
+                              <td>42 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>52</td>
+                              <td><a href="./sehir/giresun">Giresun</a></td>
+                              <td>42 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>53</td>
+                              <td><a href="./sehir/ardahan">Ardahan</a></td>
+                              <td>42 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>54</td>
+                              <td><a href="./sehir/cankiri">Çankırı</a></td>
+                              <td>41 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>55</td>
+                              <td><a href="./sehir/kastamonu">Kastamonu</a></td>
+                              <td>41 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>56</td>
+                              <td><a href="./sehir/kilis">Kilis</a></td>
+                              <td>37 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>57</td>
+                              <td><a href="./sehir/kirikkale">Kırıkkale</a></td>
+                              <td>37 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>58</td>
+                              <td><a href="./sehir/nigde">Niğde</a></td>
+                              <td>36 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>59</td>
+                              <td><a href="./sehir/sanliurfa">Şanlıurfa</a></td>
+                              <td>35 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>60</td>
+                              <td><a href="./sehir/kayseri">Kayseri</a></td>
+                              <td>35 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>61</td>
+                              <td><a href="./sehir/osmaniye">Osmaniye</a></td>
+                              <td>35 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>62</td>
+                              <td><a href="./sehir/kirsehir">Kırşehir</a></td>
+                              <td>35 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>63</td>
+                              <td><a href="./sehir/erzincan">Erzincan</a></td>
+                              <td>35 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>64</td>
+                              <td><a href="./sehir/tunceli">Tunceli</a></td>
+                              <td>34 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>65</td>
+                              <td><a href="./sehir/batman">Batman</a></td>
+                              <td>34 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>66</td>
+                              <td><a href="./sehir/corum">Çorum</a></td>
+                              <td>33 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>67</td>
+                              <td><a href="./sehir/kars">Kars</a></td>
+                              <td>33 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>68</td>
+                              <td><a href="./sehir/igdir">Iğdır</a></td>
+                              <td>31 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>69</td>
+                              <td><a href="./sehir/mus">Muş</a></td>
+                              <td>31 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>70</td>
+                              <td><a href="./sehir/bayburt">Bayburt</a></td>
+                              <td>30 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>71</td>
+                              <td><a href="./sehir/mardin">Mardin</a></td>
+                              <td>29 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>72</td>
+                              <td><a href="./sehir/hakkari">Hakkari</a></td>
+                              <td>29 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>73</td>
+                              <td><a href="./sehir/elazig">Elazığ</a></td>
+                              <td>28 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>74</td>
+                              <td><a href="./sehir/artvin">Artvin</a></td>
+                              <td>28 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>75</td>
+                              <td><a href="./sehir/erzurum">Erzurum</a></td>
+                              <td>27 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>76</td>
+                              <td><a href="./sehir/sirnak">Şırnak</a></td>
+                              <td>27 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>77</td>
+                              <td><a href="./sehir/bingol">Bingöl</a></td>
+                              <td>26 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>78</td>
+                              <td><a href="./sehir/bitlis">Bitlis</a></td>
+                              <td>26 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>79</td>
+                              <td><a href="./sehir/siirt">Siirt</a></td>
+                              <td>24 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>80</td>
+                              <td><a href="./sehir/gumushane">Gümüşhane</a></td>
+                              <td>24 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>81</td>
+                              <td><a href="./sehir/agri">Ağrı</a></td>
+                              <td>20 ₺</td>
+                          </tr>
+                          </tbody>                          
+                      </table>
+                    </div>
+                    </div>
+                </section>
+              </div>
+              <!-- kira -->
+              <div class="col-6 col-12-medium">
+                <section class="box feature">
+                    <div class="inner">
+                        <header>
+                            <h2>Ortalama Kira Fiyatları Sıralaması</h2>
+                            <p>Detay İçin Şehire Tıklayın</p>
+                        </header>
+                        <div style="max-height: 500px; overflow-y: auto;">
+                        <table class="styled-table">
+                          <thead>
+                              <tr>
+                                  <th>Sıralama</th>
+                                  <th>Şehir</th>
+                                  <th>Fiyat (₺)</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="active-row">
+                              <td>1</td>
+                              <td><a href="./sehir/mugla">Muğla</a></td>
+                              <td>27,516 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>2</td>
+                              <td><a href="./sehir/istanbul">İstanbul</a></td>
+                              <td>15,014 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>3</td>
+                              <td><a href="./sehir/antalya">Antalya</a></td>
+                              <td>13,747 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>4</td>
+                              <td><a href="./sehir/mersin">Mersin</a></td>
+                              <td>12,150 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>5</td>
+                              <td><a href="./sehir/izmir">İzmir</a></td>
+                              <td>11,971 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>6</td>
+                              <td><a href="./sehir/ankara">Ankara</a></td>
+                              <td>10,764 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>7</td>
+                              <td><a href="./sehir/aydin">Aydın</a></td>
+                              <td>9,814 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>8</td>
+                              <td><a href="./sehir/yalova">Yalova</a></td>
+                              <td>9,089 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>9</td>
+                              <td><a href="./sehir/kocaeli">Kocaeli</a></td>
+                              <td>8,761 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>10</td>
+                              <td><a href="./sehir/hatay">Hatay</a></td>
+                              <td>8,493 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>11</td>
+                              <td><a href="./sehir/bursa">Bursa</a></td>
+                              <td>8,405 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>12</td>
+                              <td><a href="./sehir/gaziantep">Gaziantep</a></td>
+                              <td>7,897 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>13</td>
+                              <td><a href="./sehir/balikesir">Balıkesir</a></td>
+                              <td>7,720 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>14</td>
+                              <td><a href="./sehir/konya">Konya</a></td>
+                              <td>7,420 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>15</td>
+                              <td><a href="./sehir/sakarya">Sakarya</a></td>
+                              <td>7,352 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>16</td>
+                              <td><a href="./sehir/tekirdag">Tekirdağ</a></td>
+                              <td>7,217 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>17</td>
+                              <td><a href="./sehir/canakkale">Çanakkale</a></td>
+                              <td>7,132 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>18</td>
+                              <td><a href="./sehir/diyarbakir">Diyarbakır</a></td>
+                              <td>6,750 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>19</td>
+                              <td><a href="./sehir/malatya">Malatya</a></td>
+                              <td>6,571 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>20</td>
+                              <td><a href="./sehir/adana">Adana</a></td>
+                              <td>6,448 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>21</td>
+                              <td><a href="./sehir/edirne">Edirne</a></td>
+                              <td>6,411 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>22</td>
+                              <td><a href="./sehir/samsun">Samsun</a></td>
+                              <td>6,342 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>23</td>
+                              <td><a href="./sehir/manisa">Manisa</a></td>
+                              <td>6,336 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>24</td>
+                              <td><a href="./sehir/nevsehir">Nevşehir</a></td>
+                              <td>6,094 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>25</td>
+                              <td><a href="./sehir/trabzon">Trabzon</a></td>
+                              <td>5,873 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>26</td>
+                              <td><a href="./sehir/kahramanmaras">Kahramanmaraş</a></td>
+                              <td>5,861 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>27</td>
+                              <td><a href="./sehir/adiyaman">Adıyaman</a></td>
+                              <td>5,722 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>28</td>
+                              <td><a href="./sehir/eskisehir">Eskişehir</a></td>
+                              <td>5,592 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>29</td>
+                              <td><a href="./sehir/denizli">Denizli</a></td>
+                              <td>5,474 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>30</td>
+                              <td><a href="./sehir/bartin">Bartın</a></td>
+                              <td>5,364 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>31</td>
+                              <td><a href="./sehir/kirklareli">Kırklareli</a></td>
+                              <td>5,336 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>32</td>
+                              <td><a href="./sehir/rize">Rize</a></td>
+                              <td>5,333 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>33</td>
+                              <td><a href="./sehir/tunceli">Tunceli</a></td>
+                              <td>5,323 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>34</td>
+                              <td><a href="./sehir/ordu">Ordu</a></td>
+                              <td>5,285 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>35</td>
+                              <td><a href="./sehir/sivas">Sivas</a></td>
+                              <td>5,283 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>36</td>
+                              <td><a href="./sehir/zonguldak">Zonguldak</a></td>
+                              <td>5,178 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>37</td>
+                              <td><a href="./sehir/sanliurfa">Şanlıurfa</a></td>
+                              <td>5,135 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>38</td>
+                              <td><a href="./sehir/kayseri">Kayseri</a></td>
+                              <td>5,103 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>39</td>
+                              <td><a href="./sehir/nigde">Niğde</a></td>
+                              <td>5,071 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>40</td>
+                              <td><a href="./sehir/sinop">Sinop</a></td>
+                              <td>5,041 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>41</td>
+                              <td><a href="./sehir/bolu">Bolu</a></td>
+                              <td>5,012 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>42</td>
+                              <td><a href="./sehir/giresun">Giresun</a></td>
+                              <td>4,958 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>43</td>
+                              <td><a href="./sehir/aksaray">Aksaray</a></td>
+                              <td>4,895 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>44</td>
+                              <td><a href="./sehir/tokat">Tokat</a></td>
+                              <td>4,731 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>45</td>
+                              <td><a href="./sehir/cankiri">Çankırı</a></td>
+                              <td>4,583 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>46</td>
+                              <td><a href="./sehir/van">Van</a></td>
+                              <td>4,499 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>47</td>
+                              <td><a href="./sehir/corum">Çorum</a></td>
+                              <td>4,432 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>48</td>
+                              <td><a href="./sehir/isparta">Isparta</a></td>
+                              <td>4,399 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>49</td>
+                              <td><a href="./sehir/amasya">Amasya</a></td>
+                              <td>4,353 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>50</td>
+                              <td><a href="./sehir/elazig">Elazığ</a></td>
+                              <td>4,350 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>51</td>
+                              <td><a href="./sehir/osmaniye">Osmaniye</a></td>
+                              <td>4,322 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>52</td>
+                              <td><a href="./sehir/duzce">Düzce</a></td>
+                              <td>4,290 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>53</td>
+                              <td><a href="./sehir/bilecik">Bilecik</a></td>
+                              <td>4,236 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>54</td>
+                              <td><a href="./sehir/bingol">Bingöl</a></td>
+                              <td>4,236 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>55</td>
+                              <td><a href="./sehir/karabuk">Karabük</a></td>
+                              <td>4,219</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>56</td>
+                              <td><a href="./sehir/mardin">Mardin</a></td>
+                              <td>4,216 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>57</td>
+                              <td><a href="./sehir/kirsehir">Kırşehir</a></td>
+                              <td>4,184 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>58</td>
+                              <td><a href="./sehir/karaman">Karaman</a></td>
+                              <td>4,150 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>59</td>
+                              <td><a href="./sehir/batman">Batman</a></td>
+                              <td>4,099 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>60</td>
+                              <td><a href="./sehir/kilis">Kilis</a></td>
+                              <td>4,063 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>61</td>
+                              <td><a href="./sehir/yozgat">Yozgat</a></td>
+                              <td>4,036 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>62</td>
+                              <td><a href="./sehir/erzincan">Erzincan</a></td>
+                              <td>4,029 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>63</td>
+                              <td><a href="./sehir/usak">Uşak</a></td>
+                              <td>4,006 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>64</td>
+                              <td><a href="./sehir/afyonkarahisar">Afyonkarahisar</a></td>
+                              <td>4,000 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>65</td>
+                              <td><a href="./sehir/kastamonu">Kastamonu</a></td>
+                              <td>3,924 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>66</td>
+                              <td><a href="./sehir/burdur">Burdur</a></td>
+                              <td>3,774 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>67</td>
+                              <td><a href="./sehir/erzurum">Erzurum</a></td>
+                              <td>3,756 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>68</td>
+                              <td><a href="./sehir/igdir">Iğdır</a></td>
+                              <td>3,737 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>69</td>
+                              <td><a href="./sehir/kutahya">Kütahya</a></td>
+                              <td>3,662 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>70</td>
+                              <td><a href="./sehir/artvin">Artvin</a></td>
+                              <td>3,627 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>71</td>
+                              <td><a href="./sehir/ardahan">Ardahan</a></td>
+                              <td>3,574 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>72</td>
+                              <td><a href="./sehir/kirikkale">Kırıkkale</a></td>
+                              <td>3,307 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>73</td>
+                              <td><a href="./sehir/kars">Kars</a></td>
+                              <td>3,046 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>74</td>
+                              <td><a href="./sehir/siirt">Siirt</a></td>
+                              <td>3,039 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>75</td>
+                              <td><a href="./sehir/bayburt">Bayburt</a></td>
+                              <td>2,941 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>76</td>
+                              <td><a href="./sehir/agri">Ağrı</a></td>
+                              <td>2,754 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>77</td>
+                              <td><a href="./sehir/bitlis">Bitlis</a></td>
+                              <td>2,712 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>78</td>
+                              <td><a href="./sehir/mus">Muş</a></td>
+                              <td>2,699 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>79</td>
+                              <td><a href="./sehir/gumushane">Gümüşhane</a></td>
+                              <td>2,652 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>80</td>
+                              <td><a href="./sehir/sirnak">Şırnak</a></td>
+                              <td>1,993 ₺</td>
+                          </tr>
+                          <tr class="active-row">
+                              <td>81</td>
+                              <td><a href="./sehir/hakkari">Hakkari</a></td>
+                              <td>1,800 ₺</td>
+                          </tr>
+                        </tbody>             
+                      </table>
+                    </div>
+                    </div>
+                </section>
+              </div>
+
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row gtr-200">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Kiranı Bil. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

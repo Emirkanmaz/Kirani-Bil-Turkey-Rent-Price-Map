@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Merkez</title>
+		<link rel="icon" type="image/x-icon" href="/images\logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+    
+	</head>
+	<body class="is-preload left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="/index.html">Kiranı Bil</a></h1>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+
+							</nav>
+
+					</header>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-medium">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+                  <section>
+                    <h3>Edirne İlçeleri</h3>
+                    <div class="vertical-menu">
+                                              <a href="./index.html" class="active">Edirne</a>
+                                              <a style="background-color: #ff000046;" href="./index.html">Enez <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                              <a style="background-color: #ff000046;" href="./index.html">Havsa <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                              <a style="background-color: #ff000046;" href="./index.html">İpsala <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                              <a href="./kesan.html">Keşan</a>
+                                              <a style="background-color: #ff000046;" href="./index.html">Lalapaşa <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                              <a style="background-color: #ff000046;" href="./index.html">Meriç <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                              <a href="./merkez.html" class="active">Merkez</a>
+                                              <a style="background-color: #ff000046;" href="./index.html">Süloğlu <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                                              <a style="background-color: #ff000046;" href="./index.html">Uzunköprü <i style="font-size: small;">(detaylı analiz mevcut değil)</i></a>
+                    </div>
+                  </section>
+
+										<section>
+											<h3>Kira % Yüzdelik Değişimi</h3>
+                      <h3 style="color:#04AA6D;">Geçen Aya Göre 6.03% Arttı.</h3>
+                      <h3 style="color:#04AA6D;">Son 3 Ayda 15.47% Artış Gösterdi.</h3>
+                      <h3 style="color:#04AA6D;">Gelecek Ay 5.81% Artarak 6,819 olması tahmin ediliyor.</h3>                                     
+										</section>
+
+								</div>
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+								<div id="content">
+
+									<!-- Content -->
+										<article>
+
+											<h2>Merkez Bölgesi Kira Ortalaması<i style="color:#04AA6D;"> 6,444 ₺</i></h2>
+                                            
+                                            <div id="kira" style="height: 400px; width: 900px; margin: 75px 0 50px 0;">
+                                            </div>
+                                            <div id="m2" style="height: 400px; width: 900px; margin-bottom: 50px;">
+                                            </div>
+											<p>Kırmızı veriler gerçeği yansıtmaz. Önceki veriler incelenerek bilgisayar tarafından hesaplanmış tahmin verileridir.</p>
+
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Kiranı Bil. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+            <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script></head>
+            <script type="text/javascript">
+                window.onload = function () {
+                    var chart = new CanvasJS.Chart("kira",
+                  {
+              
+                    title:{
+                    text: "Kira Ortalaması"
+                    },
+                     data: [
+                    {
+                      type: "line",
+              
+                      dataPoints: [
+                      { label: "Haziran 2022", y: 2973 },
+{ label: "Temmuz 2022", y: 3243 },
+{ label: "Ağustos 2022", y: 4216 },
+{ label: "Eylül 2022", y: 4684 },
+{ label: "Ekim 2022", y: 4812 },
+{ label: "Kasım 2022", y: 5005 },
+{ label: "Aralık 2022", y: 5265 },
+{ label: "Ocak 2023", y: 5213 },
+{ label: "Şubat 2023", y: 5907 },
+{ label: "Mart 2023", y: 6077 },
+{ label: "Nisan 2023", y: 6444 },
+{ label: "Mayıs 2023", y: 6819, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Haziran 2023", y: 7199, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Temmuz 2023", y: 7596, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Ağustos 2023", y: 8010, color: "#FF0000", lineColor: "#FF0000" }
+                    ]
+                    }
+                    ]
+                  });
+                  chart.render();
+                  var chart = new CanvasJS.Chart("m2",
+                  {
+              
+                    title:{
+                    text: "M² Ortalaması"
+                    },
+                     data: [
+                    {
+                      type: "line",
+
+                      dataPoints: [
+                      { label: "Haziran 2022", y: 33 },
+{ label: "Temmuz 2022", y: 34 },
+{ label: "Ağustos 2022", y: 44 },
+{ label: "Eylül 2022", y: 48 },
+{ label: "Ekim 2022", y: 50 },
+{ label: "Kasım 2022", y: 51 },
+{ label: "Aralık 2022", y: 54 },
+{ label: "Ocak 2023", y: 55 },
+{ label: "Şubat 2023", y: 59 },
+{ label: "Mart 2023", y: 68 },
+{ label: "Nisan 2023", y: 76 },
+{ label: "Mayıs 2023", y: 84, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Haziran 2023", y: 94, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Temmuz 2023", y: 106, color: "#FF0000", lineColor: "#FF0000" },
+{ label: "Ağustos 2023", y: 120, color: "#FF0000", lineColor: "#FF0000" }
+                    ]
+                    }
+                    ]
+                  });
+                  chart.render();                  
+                }
+            </script>
+	</body>
+</html>
