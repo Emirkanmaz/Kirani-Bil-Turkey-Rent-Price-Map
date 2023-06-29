@@ -4,7 +4,7 @@ This project aims to create a comprehensive map of rental prices and predict pri
 
 ## Screenshots:
 
-![](./readimg/home1)
-![](./readimg/home2)
-![](./readimg/home3)
-![](./readimg/ist0)
+![](./readimg/home1.png)
+![](./readimg/home2.png)
+![](./readimg/home3.png)
+![](./readimg/ist0.png)
